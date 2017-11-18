@@ -11,6 +11,12 @@ import UIKit
 @IBDesignable
 class FancyBtn: UIButton {
 
+    @IBInspectable var cornerRadius: CGFloat = 20.0 {
+        didSet{
+            layer.cornerRadius = cornerRadius
+        }
+        }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -21,7 +27,8 @@ class FancyBtn: UIButton {
         layer.shadowOffset = CGSize.init(width: 1.0, height: 1.0)
         imageView?.contentMode = .scaleAspectFit
         
-        layer.cornerRadius = 2
+
+        
         
         
     }
