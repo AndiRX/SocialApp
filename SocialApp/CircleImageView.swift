@@ -19,8 +19,8 @@ class CircleImageView: UIImageView {
         layer.shadowOffset = CGSize.init(width: 1.0, height: 1.0)
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
         layer.cornerRadius = self.frame.width/2
     }
 
