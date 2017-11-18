@@ -106,6 +106,9 @@
                                                 <real key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3tz-BV-1Fu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -128,6 +131,10 @@
                             <constraint firstItem="Y5E-1E-U0Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="zCi-o0-B0l"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="EJR-Df-eXH" id="YXL-Uw-utI"/>
+                        <outlet property="pwdField" destination="KdC-rd-zCB" id="CbR-wh-0Sc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
