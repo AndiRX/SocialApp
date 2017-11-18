@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftKeychainWrapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>leveldb-library.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,11 +67,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A78A26D38D59B7372A7D55FA00EEC97B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>BC5000D645EEAF961C85907CDC796FE1</key>
 		<dict>
 			<key>primary</key>
@@ -82,7 +82,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>C51678AC04A471ACD4BD50FD3C5C66A4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>E4DD95323C54A78F879DAB0F1508B8E7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F287FDDE7E673DCBED402AECE6113705</key>
 		<dict>
 			<key>primary</key>
 			<true/>

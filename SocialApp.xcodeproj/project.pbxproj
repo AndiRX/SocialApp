@@ -13,6 +13,7 @@
 		4B1FF57E1FBE43E1004E9897 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B1FF57D1FBE43E1004E9897 /* Assets.xcassets */; };
 		4B1FF5811FBE43E1004E9897 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1FF57F1FBE43E1004E9897 /* LaunchScreen.storyboard */; };
 		4B1FF5891FBE4697004E9897 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B1FF5881FBE4697004E9897 /* GoogleService-Info.plist */; };
+		4B773AFA1FC0B4A70019942A /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B773AF91FC0B4A70019942A /* FeedVC.swift */; };
 		4BBF76731FBF399900E7B09C /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBF76721FBF399900E7B09C /* FancyView.swift */; };
 		4BBF76761FBF3A3000E7B09C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBF76751FBF3A3000E7B09C /* Constants.swift */; };
 		4BBF76781FBF3CFA00E7B09C /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBF76771FBF3CFA00E7B09C /* RoundBtn.swift */; };
@@ -31,6 +32,7 @@
 		4B1FF5801FBE43E1004E9897 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B1FF5821FBE43E1004E9897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B1FF5881FBE4697004E9897 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4B773AF91FC0B4A70019942A /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		4BBF76721FBF399900E7B09C /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		4BBF76751FBF3A3000E7B09C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4BBF76771FBF3CFA00E7B09C /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				4BBF76771FBF3CFA00E7B09C /* RoundBtn.swift */,
 				4BBF76791FBF3F2400E7B09C /* FancyField.swift */,
 				4BBF767B1FBF405500E7B09C /* FancyBtn.swift */,
+				4B773AF91FC0B4A70019942A /* FeedVC.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -233,6 +237,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -285,6 +290,7 @@
 				4B1FF5791FBE43E0004E9897 /* SignInVC.swift in Sources */,
 				4BBF76781FBF3CFA00E7B09C /* RoundBtn.swift in Sources */,
 				4BBF76761FBF3A3000E7B09C /* Constants.swift in Sources */,
+				4B773AFA1FC0B4A70019942A /* FeedVC.swift in Sources */,
 				4B1FF5771FBE43E0004E9897 /* AppDelegate.swift in Sources */,
 				4BBF76731FBF399900E7B09C /* FancyView.swift in Sources */,
 				4BBF767C1FBF405500E7B09C /* FancyBtn.swift in Sources */,
