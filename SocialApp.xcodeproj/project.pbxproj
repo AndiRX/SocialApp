@@ -15,6 +15,7 @@
 		4B1FF5891FBE4697004E9897 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B1FF5881FBE4697004E9897 /* GoogleService-Info.plist */; };
 		4B2A11941FC10A7F007430B8 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A11931FC10A7F007430B8 /* PostCell.swift */; };
 		4B2A11971FC1BABB007430B8 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A11961FC1BABB007430B8 /* DataService.swift */; };
+		4B2A11991FC1D8A8007430B8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A11981FC1D8A8007430B8 /* Post.swift */; };
 		4B773AFA1FC0B4A70019942A /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B773AF91FC0B4A70019942A /* FeedVC.swift */; };
 		4B773AFC1FC0E6B30019942A /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B773AFB1FC0E6B30019942A /* CircleImageView.swift */; };
 		4BBF76731FBF399900E7B09C /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBF76721FBF399900E7B09C /* FancyView.swift */; };
@@ -37,6 +38,7 @@
 		4B1FF5881FBE4697004E9897 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4B2A11931FC10A7F007430B8 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		4B2A11961FC1BABB007430B8 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		4B2A11981FC1D8A8007430B8 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		4B773AF91FC0B4A70019942A /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		4B773AFB1FC0E6B30019942A /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		4BBF76721FBF399900E7B09C /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		4BBF76711FBE5B5400E7B09C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4B2A11981FC1D8A8007430B8 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BBF767A1FBF3F2400E7B09C /* FancyField.swift in Sources */,
+				4B2A11991FC1D8A8007430B8 /* Post.swift in Sources */,
 				4B773AFC1FC0E6B30019942A /* CircleImageView.swift in Sources */,
 				4B1FF5791FBE43E0004E9897 /* SignInVC.swift in Sources */,
 				4BBF76781FBF3CFA00E7B09C /* RoundBtn.swift in Sources */,
