@@ -37,7 +37,7 @@ class SignInVC: UIViewController {
         
         facebookLogin.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
             if error != nil {
-                print("ANDI: unable to authenticate with Facebook \(error)")
+                print("ANDI: unable to authenticate with Facebook \(String(describing: error))")
             } else if result?.isCancelled == true {
                 print("ANDI: User cancelled facebook authentication")
             } else {
@@ -51,7 +51,7 @@ class SignInVC: UIViewController {
     func firebaseAuth(_ credential: AuthCredential) {
         Auth.auth().signIn(with: credential) { (user, error) in
             if error != nil {
-                print("ANDI: Unable to authenticate with Firebase - \(error)")
+                print("ANDI: Unable to authenticate with Firebase - \(String(describing: error))")
             } else {
                 print("ANDI: Successfully authenticated with Firebase...")
                 if let user = user {
@@ -75,7 +75,7 @@ class SignInVC: UIViewController {
                 } else {
                     Auth.auth().createUser(withEmail: email, password: pwd, completion: { (user, error) in
                         if error != nil {
-                            print("ANDI: unable to authenticate with Firebase using eMail. \(error)")
+                            print("ANDI: unable to authenticate with Firebase using eMail. \(String(describing: error))")
                         } else {
                             print("ANDI: Successfully authenticated with Firebase/email")
                             if let user = user {

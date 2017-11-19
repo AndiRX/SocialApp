@@ -21,8 +21,12 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         tableView.delegate = self
         tableView.dataSource = self
-
-        // Do any additional setup after loading the view.
+    
+        DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
+            
+            print(snapshot.value)
+        })
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,7 +49,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         
-        return 1
+        return 3
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
