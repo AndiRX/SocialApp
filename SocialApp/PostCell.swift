@@ -49,9 +49,10 @@ class PostCell: UITableViewCell {
                 }
             })
         }
-        
     }
     
-    
-    
 }
+
+
+
+

@@ -14,6 +14,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var imageAdd: CircleImageView!
+    @IBOutlet weak var captionField: FancyField!
+    
     
     var posts = [Post]()
     var imagePicker: UIImagePickerController!
@@ -98,8 +100,50 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         present(imagePicker, animated: true, completion: nil)
     }
     
-    
+    @IBAction func savePostTapped(_ sender: Any) {
+        guard let caption = captionField.text, caption != "" else {
+            print("ANDI: Caption must be entered.")
+        return
+        }
+        guard let img = imageAdd.image else {
+        print("Andi: An image must be entered.")
+        return
+        }
+        
+        if let imgData = UIImageJPEGRepresentation(img, 0.2) {
+            let imgUid = NSUUID().uuidString
+            let metadata = StorageMetadata()
+            metadata.contentType = "image/jpeg"
+            
+            //not exactly same code putData instead of put:
+            DataService.ds.REF_POST_IMAGES.child(imgUid).putData(imgData, metadata: metadata) { (metadata, error) in
+                if error != nil {
+                    print("ANDI: Unable to upload image to Firebase storage")
+                } else {
+                    print("Andi: Successfully uploaded image to Firebase storage")
+                    let downloadURL = metadata?.downloadURL()?.absoluteString
+                    if let url = downloadURL {
+                    self.postToFirebase(imgUrl: url)
+                        }
+                
+                }
+        }
+        
+    }
+    }
 
+    func postToFirebase(imgUrl: String) {
+        let post: Dictionary<String, Any> = ["caption": captionField.text,
+                                             "imageUrl": imgUrl,
+                                             "likes": 0]
+        
+        let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
+        firebasePost.setValue(post)
+        captionField.text = ""
+        imageAdd.image = UIImage(named: "add-image")
+        
+    }
+    
     @IBAction func logoutTapped(_ sender: Any) {
         
         let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
