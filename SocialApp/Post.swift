@@ -32,10 +32,6 @@ class Post {
         return _postKey
     }
     
-    var postRef: DatabaseReference {
-        return _postRef
-    }
-    
     init(caption: String, imageUrl: String, likes: Int) {
         self._caption = caption
         self._imageUrl = imageUrl
@@ -63,7 +59,7 @@ class Post {
         if addLike {
             _likes = _likes + 1
         } else {
-            _likes = likes - 1
+            _likes = _likes - 1
         }
         _postRef.child("likes").setValue(_likes)
     }

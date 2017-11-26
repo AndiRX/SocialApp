@@ -77,7 +77,7 @@ class PostCell: UITableViewCell {
             } else {
                 self.likeImg.image = UIImage(named: "empty-heart")
                 self.post.adjustLikes(addLike: false)
-                self.likesRef.setValue(false)
+                self.likesRef.removeValue()
             }
         })
     }
